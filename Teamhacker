@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Meri Pehli Website</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width:900px; margin:40px auto; padding:0 20px; line-height:1.6; }
+    header { text-align:center; margin-bottom:30px; }
+    nav a { margin:0 10px; text-decoration:none; color:#0a66c2; }
+    .hero { background:#f4f7fb; padding:20px; border-radius:10px; }
+    footer { margin-top:40px; text-align:center; color:#666; font-size:0.9rem; }
+    .btn { display:inline-block; padding:8px 14px; border-radius:6px; text-decoration:none; border:1px solid #0a66c2; color:#0a66c2; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Meri Pehli Website</h1>
+    <nav>
+      <a href="#home">Home</a> •
+      <a href="#about">About</a> •
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Welcome!</h2>
+    <p>Yeh ek simple website template hai. Aap isme apna content, images, videos aur links add kar sakte ho.</p>
+    <p><a class="btn" href="#contact">Contact karo</a></p>
+  </section>
+
+  <section id="about" style="margin-top:25px;">
+    <h3>About Me</h3>
+    <p>Yahan apna introduction likho — jaise kaam, skills, ya jo bhi batana ho.</p>
+  </section>
+
+  <section id="contact" style="margin-top:25px;">
+    <h3>Contact</h3>
+    <p>Email: <strong>yourname@example.com</strong></p>
+    <p>Phone / Social: Add karo</p>
+  </section>
+
+  <footer>
+    © <span id="year"></span> — Meri Pehli Website
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
